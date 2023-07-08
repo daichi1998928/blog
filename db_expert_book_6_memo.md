@@ -72,12 +72,12 @@ SELECT * FROM users WHERE id = 100 - 1;
 SELECT * FROM users WHERE id IS NULL;
 ```
 
-一般的にインデックスはNULLに対してデータの値とはみなしていないため、保持していない。そのため、インデックスを貼っているカラムに対して IS NULL ,IS NOT NULL を用いても意味がない。
+一般的にインデックスはNULLに対してデータの値とはみなしていないため、保持していない。そのため、インデックスを貼っているカラムに対して IS NULL ,IS NOT NULL を用いても使用することはできないと、この本の中で述べられている。
 
-ただ、これはDBMSの実装に依存する部分であり、MySQL は　NULL にもインデックスを利用できる
+ただ、このブログを書くにあたって調べていくと、MySQL は　NULL にもインデックスを利用できることが分かった。
 https://techblog.istyle.co.jp/archives/1514
 
-昔はis null はインデックスを貼っていなかったが、今は利用するDBも多そう
+昔はインデックスに　is null 述語を今は利用できるDBも多そう。　
 
 - 
 
