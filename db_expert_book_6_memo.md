@@ -75,7 +75,7 @@ SELECT * FROM users WHERE id IS NULL;
 一般的にインデックスはNULLに対してデータの値とはみなしていないため、保持していない。そのため、インデックスを貼っているカラムに対して IS NULL ,IS NOT NULL を用いても使用することはできないと、この本の中で述べられている。
 
 ただ、このブログを書くにあたって調べていくと、MySQL は　NULL にもインデックスを利用できることが分かった。
-https://techblog.istyle.co.jp/archives/1514
+https://dev.mysql.com/doc/refman/8.0/ja/is-null-optimization.html
 
 
 
