@@ -77,8 +77,5 @@ SELECT * FROM users WHERE id IS NULL;
 ただ、このブログを書くにあたって調べていくと、MySQL は　NULL にもインデックスを利用できることが分かった。
 https://techblog.istyle.co.jp/archives/1514
 
-昔はインデックスに　is null 述語を今は利用できるDBも多そう。　
-
-- 
 
 
